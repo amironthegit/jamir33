@@ -1,0 +1,2362 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+proxies:
+  - name: "@FarazV2ray"
+    type: "vless"
+    server: "45.143.201.8"
+    port: 443
+    uuid: "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
+    udp: true
+    servername: "hasty-dolphin.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (2)"
+    type: "vless"
+    server: "65.109.183.102"
+    port: 80
+    uuid: "Telegram-@Cooonfig-@Cooonfig"
+    udp: true
+  - name: "@FarazV2ray (3)"
+    type: "vless"
+    server: "143.246.182.7"
+    port: 443
+    uuid: "60ba3369-9a78-40fe-98c3-233a6f107043"
+    udp: true
+    servername: "uk7.jailever.org"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (4)"
+    type: "vless"
+    server: "188.114.97.6"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (5)"
+    type: "vless"
+    server: "178.154.208.44"
+    port: 443
+    uuid: "1a8aa3c0-7741-49dd-adbc-dcc629f6b938"
+    udp: true
+    servername: "smartcaptcha.yandexcloud.net"
+    tls: true
+    reality-opts:
+      public-key: "oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg"
+      short-id: "03a70b17f8036009"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (6)"
+    type: "trojan"
+    server: "172.67.149.60"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@FarazV2ray (7)"
+    type: "vless"
+    server: "3.77.122.78"
+    port: 22224
+    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    udp: true
+  - name: "@FarazV2ray (8)"
+    type: "vless"
+    server: "3.77.122.78"
+    port: 22222
+    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    udp: true
+  - name: "@FarazV2ray (9)"
+    type: "trojan"
+    server: "188.114.97.7"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+  - name: "@FarazV2ray (10)"
+    type: "vless"
+    server: "3.64.99.156"
+    port: 22223
+    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    udp: true
+  - name: "@FarazV2ray (11)"
+    type: "vless"
+    server: "81.177.215.156"
+    port: 13868
+    uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
+    udp: true
+    servername: "amd.com"
+    tls: true
+    reality-opts:
+      public-key: "FaX6hUpswBFFN-GaXFmFK8bVWYcPlrB4KP26n_INgko"
+      short-id: "e852dc"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (12)"
+    type: "vmess"
+    server: "guanwang.awsno.com"
+    port: 443
+    uuid: "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+  - name: "@FarazV2ray (13)"
+    type: "vless"
+    server: "149.33.36.32"
+    port: 443
+    uuid: "1cde7b4a-6dd7-4eb6-ba2e-41625d491300"
+    udp: true
+    servername: "smartcaptcha.yandexcloud.net"
+    tls: true
+    reality-opts:
+      public-key: "oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg"
+      short-id: "03a70b17f8036009"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (14)"
+    type: "vless"
+    server: "3.77.122.78"
+    port: 22223
+    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    udp: true
+  - name: "@FarazV2ray (15)"
+    type: "vless"
+    server: "5.253.42.164"
+    port: 40443
+    uuid: "e99ba96d-dec8-42eb-be53-19e71eef7cab"
+    udp: true
+    servername: "deepl.com"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
+      short-id: "68a8"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (16)"
+    type: "vless"
+    server: "31.43.191.39"
+    port: 443
+    uuid: "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
+    udp: true
+    servername: "luminous-vortex.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (17)"
+    type: "vless"
+    server: "149.33.8.216"
+    port: 443
+    uuid: "4d064d9b-d4bb-468d-a4e0-948cf6a7541b"
+    udp: true
+    servername: "smartcaptcha.yandexcloud.net"
+    tls: true
+    reality-opts:
+      public-key: "oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg"
+      short-id: "03a70b17f8036009"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (18)"
+    type: "vless"
+    server: "188.114.97.6"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (19)"
+    type: "vless"
+    server: "149.33.36.32"
+    port: 443
+    uuid: "1cde7b4a-6dd7-4eb6-ba2e-41625d491300"
+    udp: true
+    servername: "smartcaptcha.yandexcloud.net"
+    tls: true
+    reality-opts:
+      public-key: "oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg"
+      short-id: "03a70b17f8036009"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (20)"
+    type: "vless"
+    server: "199.232.78.159"
+    port: 443
+    uuid: "8700ccd7-4bb4-49a1-a0ce-18bbe7e7d9fc"
+    udp: true
+    servername: "ssl.fastly.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "towndtime.global.ssl.fastly.neT."
+  - name: "@FarazV2ray (21)"
+    type: "vless"
+    server: "135.125.184.182"
+    port: 50559
+    uuid: "3fd3909b-238f-42c4-9170-38d10014b1d8"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "Play.googel.com"
+  - name: "@FarazV2ray (22)"
+    type: "vless"
+    server: "199.232.78.159"
+    port: 443
+    uuid: "e393833a-4eb4-4783-8409-cfa203d52947"
+    udp: true
+    servername: "ssl.fastly.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "SvnTeamChannel.global.ssl.fastly.net"
+  - name: "@FarazV2ray (23)"
+    type: "vless"
+    server: "3.64.99.156"
+    port: 22224
+    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    udp: true
+  - name: "@FarazV2ray (24)"
+    type: "vless"
+    server: "201.51.1.11"
+    port: 40443
+    uuid: "28d0edc6-93c9-4465-bac9-720274d8b8c4"
+    udp: true
+    servername: "deepl.com"
+    tls: true
+    reality-opts:
+      public-key: "WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg"
+      short-id: "69d4"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (25)"
+    type: "vless"
+    server: "104.16.74.207"
+    port: 443
+    uuid: "901ff980-0727-4a6b-8417-5d9be8948ff6"
+    udp: true
+    servername: "v1.sub1vpn.dpdns.org"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (26)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (27)"
+    type: "vless"
+    server: "161.35.201.185"
+    port: 34619
+    uuid: "ff454950-3922-4398-8cfe-7d53f5687901"
+    udp: true
+  - name: "@FarazV2ray (28)"
+    type: "vless"
+    server: "78.17.150.127"
+    port: 443
+    uuid: "3f02f5cd-3e03-436c-a151-02a9b9ac5966"
+    udp: true
+    servername: "smartcaptcha.yandexcloud.net"
+    tls: true
+    reality-opts:
+      public-key: "oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg"
+      short-id: "03a70b17f8036009"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (29)"
+    type: "vless"
+    server: "167.71.137.226"
+    port: 39692
+    uuid: "69472b80-5a66-42e7-a70d-0f862a78b673"
+    udp: true
+  - name: "@FarazV2ray (30)"
+    type: "trojan"
+    server: "104.16.1.120"
+    port: 443
+    password: "MITIVPN"
+    udp: true
+    sni: "us-ga-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/us---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "Us-A-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"
+  - name: "@FarazV2ray (31)"
+    type: "vless"
+    server: "95.85.251.116"
+    port: 59631
+    uuid: "22448df3-17f8-40a6-9199-babaca108b46"
+    udp: true
+    servername: "google.com"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bymilcd_vnDoof7qAq4QpFTm-hMeFPZwXPTMFXdasSg"
+      short-id: "4b"
+    network: "grpc"
+  - name: "@FarazV2ray (32)"
+    type: "vless"
+    server: "3.64.99.156"
+    port: 22222
+    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    udp: true
+  - name: "@FarazV2ray (33)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (34)"
+    type: "vless"
+    server: "direct.com.fastserverippanel.online"
+    port: 443
+    uuid: "8f60c053-e103-4c95-b912-b1037a029ebe"
+    udp: true
+    servername: "yahoo.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "f4W1r0nI49Z30bbxXU6Hb5rYLZxlXegodg2MzS0BiWI"
+      short-id: "d15b96dda66c6c26"
+  - name: "@FarazV2ray (35)"
+    type: "vless"
+    server: "69.46.46.67"
+    port: 443
+    uuid: "6fcc0657-e780-4a31-a614-0287b5c5807b"
+    udp: true
+    servername: "web-production-0d497.up.railway.app"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws/vless/6fcc0657-e780-4a31-a614-0287b5c5807b?ed=2048"
+      headers:
+        Host: "web-production-0d497.up.railway.app"
+  - name: "@FarazV2ray (36)"
+    type: "vless"
+    server: "37.156.47.242"
+    port: 8080
+    uuid: "ed2f2ae0-b897-45fe-9807-acabcff4371a"
+    udp: true
+    servername: "mbp.yimg.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "MYlH37mavAUEvPJJFGgdLvAytETP0CuXq0_iO7WNO1U"
+      short-id: "b292f6488eae95ae"
+  - name: "@FarazV2ray (37)"
+    type: "trojan"
+    server: "104.18.37.228"
+    port: 443
+    password: "MITIVPN"
+    udp: true
+    sni: "us-ga-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/us---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "Us-A-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"
+  - name: "@FarazV2ray (38)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    servername: "static.lotussec.com"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (39)"
+    type: "vless"
+    server: "45.143.201.8"
+    port: 443
+    uuid: "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
+    udp: true
+    servername: "hasty-dolphin.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (40)"
+    type: "trojan"
+    server: "188.114.97.6"
+    port: 443
+    password: "MiTiVPN"
+    udp: true
+    sni: "Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/dde---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "nlls-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"
+  - name: "@FarazV2ray (41)"
+    type: "vless"
+    server: "95.85.251.116"
+    port: 59631
+    uuid: "22448df3-17f8-40a6-9199-babaca108b46"
+    udp: true
+    servername: "google.com"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bymilcd_vnDoof7qAq4QpFTm-hMeFPZwXPTMFXdasSg"
+      short-id: "4b"
+    network: "grpc"
+  - name: "@FarazV2ray (42)"
+    type: "vless"
+    server: "143.246.182.7"
+    port: 443
+    uuid: "60ba3369-9a78-40fe-98c3-233a6f107043"
+    udp: true
+    servername: "uk7.jailever.org"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (43)"
+    type: "vless"
+    server: "31.43.191.39"
+    port: 443
+    uuid: "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
+    udp: true
+    servername: "luminous-vortex.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (44)"
+    type: "vless"
+    server: "i3.cloud--vpn.site"
+    port: 443
+    uuid: "f04c31f7-cfab-4824-d167-4137d836ea82"
+    udp: true
+    servername: "ssl.fastly.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "c12.com"
+  - name: "@FarazV2ray (45)"
+    type: "vless"
+    server: "server.wiki.fastpanel.dash.api.carpetsart.ir"
+    port: 5055
+    uuid: "8f60c053-e103-4c95-b912-b1037a029ebe"
+    udp: true
+    servername: "yahoo.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "f4W1r0nI49Z30bbxXU6Hb5rYLZxlXegodg2MzS0BiWI"
+      short-id: "d15b96dda66c6c26"
+  - name: "@FarazV2ray (46)"
+    type: "vless"
+    server: "170.168.97.5"
+    port: 8443
+    uuid: "c6f220ed-41f2-21ba-438c-80f05ebbf92a"
+    udp: true
+    servername: "download.nvidia.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "@FarazV2ray (47)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (48)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (49)"
+    type: "vless"
+    server: "188.72.103.3"
+    port: 443
+    uuid: "166ef05e-8ab5-43b7-8910-d1bb0a4326a5"
+    udp: true
+    servername: "cdn.tracker.yandex.net"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/v1/rooms/63368e3dbb/sync"
+      headers:
+        Host: "sync.watchwave.link"
+  - name: "@FarazV2ray (50)"
+    type: "vless"
+    server: "201.51.1.11"
+    port: 40443
+    uuid: "28d0edc6-93c9-4465-bac9-720274d8b8c4"
+    udp: true
+    servername: "deepl.com"
+    tls: true
+    reality-opts:
+      public-key: "WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg"
+      short-id: "69d4"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (51)"
+    type: "vless"
+    server: "193.29.224.185"
+    port: 8443
+    uuid: "8787dd0a-095a-414e-804f-a7d16a1ae166"
+    udp: true
+    servername: "fi1.hys.braidx.tech"
+    tls: true
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (52)"
+    type: "vless"
+    server: "54.37.6.119"
+    port: 2053
+    uuid: "d9aa9ea3-9388-483f-a58d-a754f33ec505"
+    udp: true
+    servername: "play.google.com"
+    tls: true
+    reality-opts:
+      public-key: "GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY"
+      short-id: "524efc1f88592266"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "api.v1.data"
+  - name: "@FarazV2ray (53)"
+    type: "ss"
+    server: "31.76.30.79"
+    port: 10808
+    cipher: "chacha20-ietf-poly1305"
+    password: "TmXSpcRBbhvHDg66bo2w89bToxQsbMoa"
+    udp: true
+  - name: "@FarazV2ray (54)"
+    type: "trojan"
+    server: "172.67.149.60"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@FarazV2ray (55)"
+    type: "trojan"
+    server: "188.114.97.7"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+  - name: "@FarazV2ray (56)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    servername: "static.lotussec.com"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (57)"
+    type: "vless"
+    server: "95.85.233.181"
+    port: 443
+    uuid: "e0bb3250-1873-4b9d-b9b5-7aa6c863885f"
+    udp: true
+    servername: "c.primarymaster.online"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "S05RWQUVH-p3uqekd0iRpIeH__NpCt0XEN2xCiQJs3Y"
+      short-id: "c56c3ba3b9f676c5"
+    network: "grpc"
+  - name: "@FarazV2ray (58)"
+    type: "vless"
+    server: "185.79.138.71"
+    port: 448
+    uuid: "0b0915d7-6800-4580-a44b-77d84f105e6a"
+    udp: true
+    servername: "www.samsung.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8"
+      short-id: "cd21e552537c7c0b"
+  - name: "@FarazV2ray (59)"
+    type: "vless"
+    server: "144.31.157.202"
+    port: 110
+    uuid: "b1d206b2-83b8-4756-aa3d-838242451c8d"
+    udp: true
+  - name: "@FarazV2ray (60)"
+    type: "vless"
+    server: "45.92.219.204"
+    port: 8088
+    uuid: "06f86f1b-1fa0-437e-9e5d-8f8cf27bdf96"
+    udp: true
+    servername: "play.google.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "6m_clJWpXHndi176bB428JqroczCuJVMyhfMGuI9wRI"
+      short-id: "11e9"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (61)"
+    type: "vless"
+    server: "95.85.228.161"
+    port: 8443
+    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
+    udp: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "@FarazV2ray (62)"
+    type: "vless"
+    server: "64.49.38.6"
+    port: 993
+    uuid: "e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d"
+    udp: true
+    servername: "download.nvidia.com"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (63)"
+    type: "vless"
+    server: "45.74.178.41"
+    port: 719
+    uuid: "ae9bcc43-5fd8-4891-b06e-1c93e2747ed9"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/api/v2/xtrnwqjbkr?ed=2560"
+      headers:
+        Host: "play.google.com"
+  - name: "@FarazV2ray (64)"
+    type: "vless"
+    server: "65.109.208.236"
+    port: 26795
+    uuid: "c896406b-ccc4-4c37-8b8c-15964f32a9a2"
+    udp: true
+  - name: "@FarazV2ray (65)"
+    type: "vless"
+    server: "201.51.1.11"
+    port: 40443
+    uuid: "28d0edc6-93c9-4465-bac9-720274d8b8c4"
+    udp: true
+    servername: "deepl.com"
+    tls: true
+    reality-opts:
+      public-key: "WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg"
+      short-id: "69d4"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (66)"
+    type: "ss"
+    server: "20.223.129.129"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "tDa0Zpm4cAYkoc9r"
+    udp: true
+  - name: "@FarazV2ray (67)"
+    type: "trojan"
+    server: "172.67.149.60"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@FarazV2ray (68)"
+    type: "vless"
+    server: "194.87.30.161"
+    port: 22647
+    uuid: "ffa289e7-a058-493a-b234-3db1f26378d7"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+  - name: "@filembad"
+    type: "vless"
+    server: "144.31.157.202"
+    port: 110
+    uuid: "b1d206b2-83b8-4756-aa3d-838242451c8d"
+    udp: true
+  - name: "@FarazV2ray (69)"
+    type: "vless"
+    server: "31.43.191.39"
+    port: 443
+    uuid: "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
+    udp: true
+    servername: "luminous-vortex.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (70)"
+    type: "vless"
+    server: "176.96.138.122"
+    port: 443
+    uuid: "518a99df-54f6-4f42-819d-b60abd880edf"
+    udp: true
+    servername: "kind-vortex.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (71)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    servername: "static.lotussec.com"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (72)"
+    type: "vless"
+    server: "194.87.30.161"
+    port: 22647
+    uuid: "ffa289e7-a058-493a-b234-3db1f26378d7"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+  - name: "@FarazV2ray (73)"
+    type: "vless"
+    server: "188.72.103.3"
+    port: 443
+    uuid: "166ef05e-8ab5-43b7-8910-d1bb0a4326a5"
+    udp: true
+    servername: "cdn.tracker.yandex.net"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/api/v1/rooms/63368e3dbb/sync"
+      headers:
+        Host: "sync.watchwave.link"
+  - name: "@FarazV2ray (74)"
+    type: "vless"
+    server: "104.17.148.22"
+    port: 443
+    uuid: "mahanvpn-mahanvpn"
+    udp: true
+    servername: "mAhaNrEaliteAm.MaHkHan.iR"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "mAhaNrEaliteAm.MaHkHan.iR"
+  - name: "@FarazV2ray (75)"
+    type: "vless"
+    server: "104.252.19.69"
+    port: 443
+    uuid: "Tel-NamedZadim"
+    udp: true
+  - name: "@FarazV2ray (76)"
+    type: "vless"
+    server: "95.85.228.161"
+    port: 8443
+    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
+    udp: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "@FarazV2ray (77)"
+    type: "vless"
+    server: "60.249.101.14"
+    port: 10000
+    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
+    udp: true
+  - name: "@FarazV2ray (78)"
+    type: "vless"
+    server: "199.232.78.159"
+    port: 443
+    uuid: "dc325c1a-2776-45c5-99a8-88840b1e97e7"
+    udp: true
+    servername: "ssl.fastly.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "SvnTeamChannel.global.ssl.fastly.net"
+  - name: "@FarazV2ray (79)"
+    type: "vless"
+    server: "91.107.240.230"
+    port: 80
+    uuid: "Telegram@Cooonfig"
+    udp: true
+  - name: "@FarazV2ray (80)"
+    type: "vless"
+    server: "45.88.13.3"
+    port: 8443
+    uuid: "e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d"
+    udp: true
+    servername: "download.nvidia.com"
+    tls: true
+    reality-opts:
+      public-key: "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "@FarazV2ray (81)"
+    type: "vmess"
+    server: "176.65.151.89"
+    port: 30000
+    uuid: "0c31de50-ac14-43bd-8907-57dfadf24201"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@FarazV2ray (82)"
+    type: "vless"
+    server: "69.46.46.51"
+    port: 443
+    uuid: "af4cc21f-c53a-4ebe-928e-303f018f9ed1"
+    udp: true
+    servername: "3x-ui-production-4ea6.up.railway.app"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "3x-ui-production-4ea6.up.railway.app"
+  - name: "@FarazV2ray (83)"
+    type: "ss"
+    server: "82.38.31.42"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@FarazV2ray (84)"
+    type: "vless"
+    server: "201.51.1.11"
+    port: 40443
+    uuid: "28d0edc6-93c9-4465-bac9-720274d8b8c4"
+    udp: true
+    servername: "deepl.com"
+    tls: true
+    reality-opts:
+      public-key: "WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg"
+      short-id: "69d4"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (85)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "4d10c997-4781-4cd9-82c3-15453523e12c"
+    udp: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "@FarazV2ray (86)"
+    type: "vless"
+    server: "45.92.219.204"
+    port: 8088
+    uuid: "06f86f1b-1fa0-437e-9e5d-8f8cf27bdf96"
+    udp: true
+    servername: "play.google.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "6m_clJWpXHndi176bB428JqroczCuJVMyhfMGuI9wRI"
+      short-id: "11e9"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (87)"
+    type: "vless"
+    server: "69.46.46.20"
+    port: 443
+    uuid: "d197e9c8-6b92-c7b7-b145-3ff79dead74b"
+    udp: true
+    servername: "rvg-production-5897.up.railway.app"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws/d197e9c8-6b92-c7b7-b145-3ff79dead74b"
+      headers:
+        Host: "rvg-production-5897.up.railway.app"
+  - name: "@FarazV2ray (88)"
+    type: "vless"
+    server: "45.92.219.204"
+    port: 8088
+    uuid: "06f86f1b-1fa0-437e-9e5d-8f8cf27bdf96"
+    udp: true
+    servername: "play.google.com"
+    tls: true
+    client-fingerprint: "ios"
+    reality-opts:
+      public-key: "6m_clJWpXHndi176bB428JqroczCuJVMyhfMGuI9wRI"
+      short-id: "11e9"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (89)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (90)"
+    type: "vless"
+    server: "45.143.201.8"
+    port: 443
+    uuid: "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
+    udp: true
+    servername: "hasty-dolphin.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (91)"
+    type: "vless"
+    server: "93.114.194.120"
+    port: 448
+    uuid: "bc5b801f-49a7-4db7-ac92-a2c57d42d132"
+    udp: true
+    servername: "www.samsung.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "qX6IJfWNN-SNray6xJugb8pCpgY_zjeyCfvq9IUyd3w"
+      short-id: "e1bdc95c1554c8eb"
+  - name: "@FarazV2ray (92)"
+    type: "vless"
+    server: "69.46.46.30"
+    port: 443
+    uuid: "6e50ed70-fbde-3719-6867-64348d81f276"
+    udp: true
+    servername: "hashish-production-evj7.up.railway.app"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws/6e50ed70-fbde-3719-6867-64348d81f276"
+      headers:
+        Host: "hashish-production-evj7.up.railway.app"
+  - name: "@FarazV2ray (93)"
+    type: "vless"
+    server: "69.46.46.10"
+    port: 443
+    uuid: "9bf4031e-2642-a017-456b-091b11359231"
+    udp: true
+    servername: "rvg-production-ddf4.up.railway.app"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws/9bf4031e-2642-a017-456b-091b11359231"
+      headers:
+        Host: "rvg-production-ddf4.up.railway.app"
+  - name: "@FarazV2ray (94)"
+    type: "hysteria2"
+    server: "179.61.251.253"
+    port: 37003
+    password: "TelegramVPNjey"
+    udp: true
+    skip-cert-verify: true
+    sni: "de.jey.cc.cd"
+    obfs: "salamander"
+    obfs-password: "83v9muumcyikh5ch"
+  - name: "@FarazV2ray (95)"
+    type: "trojan"
+    server: "172.67.149.60"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@FarazV2ray (96)"
+    type: "trojan"
+    server: "172.67.149.60"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@FarazV2ray (97)"
+    type: "vless"
+    server: "69.46.46.51"
+    port: 443
+    uuid: "af4cc21f-c53a-4ebe-928e-303f018f9ed1"
+    udp: true
+    servername: "3x-ui-production-4ea6.up.railway.app"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "3x-ui-production-4ea6.up.railway.app"
+  - name: "@FarazV2ray (98)"
+    type: "vless"
+    server: "170.168.97.5"
+    port: 8443
+    uuid: "c6f220ed-41f2-21ba-438c-80f05ebbf92a"
+    udp: true
+    servername: "download.nvidia.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "@FarazV2ray (99)"
+    type: "vless"
+    server: "5.253.42.164"
+    port: 40443
+    uuid: "e99ba96d-dec8-42eb-be53-19e71eef7cab"
+    udp: true
+    servername: "deepl.com"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
+      short-id: "68a8"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (100)"
+    type: "vless"
+    server: "104.17.147.22"
+    port: 443
+    uuid: "mahanvpn-mahanvpn"
+    udp: true
+    servername: "mAhaNrEaliteAm.MaHkHan.iR"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "mAhaNrEaliteAm.MaHkHan.iR"
+  - name: "@FarazV2ray (101)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "4d10c997-4781-4cd9-82c3-15453523e12c"
+    udp: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "@FarazV2ray (102)"
+    type: "vless"
+    server: "95.85.228.161"
+    port: 8443
+    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
+    udp: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "@FarazV2ray (103)"
+    type: "vless"
+    server: "95.85.251.116"
+    port: 59631
+    uuid: "22448df3-17f8-40a6-9199-babaca108b46"
+    udp: true
+    servername: "google.com"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bymilcd_vnDoof7qAq4QpFTm-hMeFPZwXPTMFXdasSg"
+      short-id: "4b"
+    network: "grpc"
+  - name: "@FarazV2ray (104)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (105)"
+    type: "vless"
+    server: "104.26.14.85"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (106)"
+    type: "trojan"
+    server: "188.114.97.7"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+  - name: "@FarazV2ray (107)"
+    type: "vless"
+    server: "140.248.186.45"
+    port: 443
+    uuid: "XpnTeam-13"
+    udp: true
+    servername: "ssl.fastly.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "Appxdn.global.ssl.fastly.net"
+  - name: "@FarazV2ray (108)"
+    type: "hysteria2"
+    server: "130.49.161.70"
+    port: 443
+    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
+    udp: true
+    skip-cert-verify: true
+    sni: "hy2.aspidnet.xyz"
+    obfs: "salamander"
+    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+  - name: "@FarazV2ray (109)"
+    type: "ss"
+    server: "70.39.198.35"
+    port: 54166
+    cipher: "chacha20-ietf-poly1305"
+    password: "EvLfWGe0AKvK"
+    udp: true
+  - name: "@FarazV2ray (110)"
+    type: "vless"
+    server: "dyar3.javanrooo.ir"
+    port: 2087
+    uuid: "b3c0e083-7608-48b1-84ac-efd75522b745"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "play.google.com"
+  - name: "@FarazV2ray (111)"
+    type: "vless"
+    server: "194.87.30.161"
+    port: 22647
+    uuid: "ffa289e7-a058-493a-b234-3db1f26378d7"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+  - name: "@FarazV2ray (112)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    servername: "static.lotussec.com"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (113)"
+    type: "vless"
+    server: "93.152.217.55"
+    port: 8443
+    uuid: "5bb07942-ca80-4577-acd0-e5935c3cd523"
+    udp: true
+    servername: "vk-portal.ru"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "4uDjB4cV22HwhNwXkyicoWN5ocwxBB85i08lcRpN7Xc"
+      short-id: "ad5cfe18"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (114)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (115)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "4d10c997-4781-4cd9-82c3-15453523e12c"
+    udp: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "@FarazV2ray (116)"
+    type: "vless"
+    server: "gr-edge2.msjia8844.site"
+    port: 8876
+    uuid: "ad87f38a-f3ff-4018-96e4-6bed6461aad0"
+    udp: true
+    servername: "yahoo.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "RCmWlniqeu9bdDDiD0giCpzvbzEqz7iNSxAp9GHLdx4"
+      short-id: "efb839e3b1397162"
+  - name: "@FarazV2ray (117)"
+    type: "vless"
+    server: "media.cdkshop.ir"
+    port: 443
+    uuid: "b9c4f23e-5ab8-4bad-b31a-5b2eebce4e31"
+    udp: true
+    servername: "myclub.snapp.ir"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SJdAKRmq9WVXSd1T92Nbk-JftCM7JZMNpBaNCnhLYjk"
+      short-id: "722b4dbcc2"
+  - name: "@FarazV2ray (118)"
+    type: "vless"
+    server: "83.168.71.216"
+    port: 443
+    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
+    udp: true
+    servername: "ads.x5.ru"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
+      short-id: "2f49bccf11150ef2"
+  - name: "@FarazV2ray (119)"
+    type: "vless"
+    server: "83.168.71.216"
+    port: 443
+    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
+    udp: true
+    servername: "ads.x5.ru"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
+      short-id: "2f49bccf11150ef2"
+  - name: "@FarazV2ray (120)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    servername: "static.lotussec.com"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (121)"
+    type: "vless"
+    server: "img.msjia8844.site"
+    port: 9563
+    uuid: "ad87f38a-f3ff-4018-96e4-6bed6461aad0"
+    udp: true
+    servername: "yahoo.com"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "KscDBZbhGBqPrXiUb-nHap2Y4GygP0YhKAeTQXQjiAw"
+      short-id: "f587ae7e9b3c38d6"
+    network: "xhttp"
+  - name: "@FarazV2ray (122)"
+    type: "trojan"
+    server: "188.114.97.7"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+  - name: "@FarazV2ray (123)"
+    type: "vless"
+    server: "176.96.138.122"
+    port: 443
+    uuid: "518a99df-54f6-4f42-819d-b60abd880edf"
+    udp: true
+    servername: "kind-vortex.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (124)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (125)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (126)"
+    type: "trojan"
+    server: "188.114.97.7"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+  - name: "@FarazV2ray (127)"
+    type: "vless"
+    server: "i2.cloud--vpn.site"
+    port: 443
+    uuid: "78eddd19-4fd4-461e-ad75-efd8cd44e0d0"
+    udp: true
+    servername: "ssl.fastly.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "c12.com"
+  - name: "@FarazV2ray (128)"
+    type: "hysteria2"
+    server: "179.61.251.253"
+    port: 37003
+    password: "TelegramVPNjey"
+    udp: true
+    skip-cert-verify: true
+    sni: "de.jey.cc.cd"
+    obfs: "salamander"
+    obfs-password: "83v9muumcyikh5ch"
+  - name: "@FarazV2ray (129)"
+    type: "hysteria2"
+    server: "130.49.161.70"
+    port: 443
+    password: "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR"
+    udp: true
+    skip-cert-verify: true
+    sni: "hy2.aspidnet.xyz"
+    obfs: "salamander"
+    obfs-password: "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+  - name: "@FarazV2ray (130)"
+    type: "trojan"
+    server: "172.67.149.60"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@FarazV2ray (131)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "4d10c997-4781-4cd9-82c3-15453523e12c"
+    udp: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "@FarazV2ray (132)"
+    type: "vless"
+    server: "104.26.14.85"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (133)"
+    type: "vless"
+    server: "104.21.71.238"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (134)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    servername: "static.lotussec.com"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (135)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (136)"
+    type: "vless"
+    server: "176.96.138.122"
+    port: 443
+    uuid: "518a99df-54f6-4f42-819d-b60abd880edf"
+    udp: true
+    servername: "kind-vortex.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (137)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "4d10c997-4781-4cd9-82c3-15453523e12c"
+    udp: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "@FarazV2ray (138)"
+    type: "vless"
+    server: "194.104.10.68"
+    port: 443
+    uuid: "68b4b16e-2759-47a4-8a69-33118edf5ce6"
+    udp: true
+    servername: "ned.leontunel.ru"
+    tls: true
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "z3U2vV7PRNvOraeAs6RnjM8aQbkOFdyp82ogXdS40mI"
+      short-id: "f64c0c7635cbddf5"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (139)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    servername: "static.lotussec.com"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (140)"
+    type: "trojan"
+    server: "172.67.149.60"
+    port: 443
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@FarazV2ray (141)"
+    type: "hysteria2"
+    server: "179.61.251.253"
+    port: 37003
+    password: "TelegramVPNjey"
+    udp: true
+    skip-cert-verify: true
+    sni: "de.jey.cc.cd"
+    obfs: "salamander"
+    obfs-password: "83v9muumcyikh5ch"
+  - name: "@FarazV2ray (142)"
+    type: "vless"
+    server: "104.26.14.85"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (143)"
+    type: "vless"
+    server: "176.96.138.122"
+    port: 443
+    uuid: "518a99df-54f6-4f42-819d-b60abd880edf"
+    udp: true
+    servername: "kind-vortex.cdn.cachefleet.com"
+    tls: true
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg"
+    flow: "xtls-rprx-vision"
+  - name: "@FarazV2ray (144)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (145)"
+    type: "vless"
+    server: "172.66.44.97"
+    port: 443
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    udp: true
+    servername: "josni.hoyes.cloudns.ch"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "@FarazV2ray (146)"
+    type: "vless"
+    server: "104.21.71.238"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=2560"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (147)"
+    type: "vless"
+    server: "104.18.1.1"
+    port: 2087
+    uuid: "97ea73b6-2043-4238-903c-a1e3d4a43c96"
+    udp: true
+    servername: "Amphetamine.aDaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/download.php#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: "Amphetamine.aDaspoloandco.com"
+  - name: "@FarazV2ray (148)"
+    type: "trojan"
+    server: "2.144.21.150"
+    port: 2000
+    password: "humanity"
+    udp: true
+    sni: "www.ignitelimit.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+  - name: "@FarazV2ray (149)"
+    type: "vless"
+    server: "173.245.59.1"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=2560"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (150)"
+    type: "vless"
+    server: "173.245.59.1"
+    port: 443
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    udp: true
+    servername: "rubifen.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "@FarazV2ray (151)"
+    type: "vless"
+    server: "83.168.71.216"
+    port: 443
+    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
+    udp: true
+    servername: "ads.x5.ru"
+    tls: true
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
+      short-id: "2f49bccf11150ef2"
+  - name: "@FarazV2ray (152)"
+    type: "vless"
+    server: "static.lotussec.com"
+    port: 443
+    uuid: "14b48651-3738-4926-bc09-4c04e87ff80b"
+    udp: true
+    servername: "static.lotussec.com"
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (153)"
+    type: "vless"
+    server: "set.moonsoft.ir"
+    port: 443
+    uuid: "2bfeac35-441f-42a7-b579-3ebfc6569f53"
+    udp: true
+    servername: "WorKStOrESHoP.MoONsoFTsToRe.NeT."
+    tls: true
+    network: "xhttp"
+  - name: "@FarazV2ray (154)"
+    type: "vless"
+    server: "188.114.97.4"
+    port: 8443
+    uuid: "f798a2c4-c51b-409d-b349-ca8455b36796"
+    udp: true
+    servername: "chopin.adaspoloandco.com"
+    tls: true
+    network: "ws"
+    ws-opts:
+      path: "/download.php#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: "chopin.adaspoloandco.com"
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "AUTO (Least Ping)"
+      - "ROUND ROBIN"
+      - "FALLBACK"
+      - "DIRECT"
+      - "@FarazV2ray"
+      - "@FarazV2ray (2)"
+      - "@FarazV2ray (3)"
+      - "@FarazV2ray (4)"
+      - "@FarazV2ray (5)"
+      - "@FarazV2ray (6)"
+      - "@FarazV2ray (7)"
+      - "@FarazV2ray (8)"
+      - "@FarazV2ray (9)"
+      - "@FarazV2ray (10)"
+      - "@FarazV2ray (11)"
+      - "@FarazV2ray (12)"
+      - "@FarazV2ray (13)"
+      - "@FarazV2ray (14)"
+      - "@FarazV2ray (15)"
+      - "@FarazV2ray (16)"
+      - "@FarazV2ray (17)"
+      - "@FarazV2ray (18)"
+      - "@FarazV2ray (19)"
+      - "@FarazV2ray (20)"
+      - "@FarazV2ray (21)"
+      - "@FarazV2ray (22)"
+      - "@FarazV2ray (23)"
+      - "@FarazV2ray (24)"
+      - "@FarazV2ray (25)"
+      - "@FarazV2ray (26)"
+      - "@FarazV2ray (27)"
+      - "@FarazV2ray (28)"
+      - "@FarazV2ray (29)"
+      - "@FarazV2ray (30)"
+      - "@FarazV2ray (31)"
+      - "@FarazV2ray (32)"
+      - "@FarazV2ray (33)"
+      - "@FarazV2ray (34)"
+      - "@FarazV2ray (35)"
+      - "@FarazV2ray (36)"
+      - "@FarazV2ray (37)"
+      - "@FarazV2ray (38)"
+      - "@FarazV2ray (39)"
+      - "@FarazV2ray (40)"
+      - "@FarazV2ray (41)"
+      - "@FarazV2ray (42)"
+      - "@FarazV2ray (43)"
+      - "@FarazV2ray (44)"
+      - "@FarazV2ray (45)"
+      - "@FarazV2ray (46)"
+      - "@FarazV2ray (47)"
+      - "@FarazV2ray (48)"
+      - "@FarazV2ray (49)"
+      - "@FarazV2ray (50)"
+      - "@FarazV2ray (51)"
+      - "@FarazV2ray (52)"
+      - "@FarazV2ray (53)"
+      - "@FarazV2ray (54)"
+      - "@FarazV2ray (55)"
+      - "@FarazV2ray (56)"
+      - "@FarazV2ray (57)"
+      - "@FarazV2ray (58)"
+      - "@FarazV2ray (59)"
+      - "@FarazV2ray (60)"
+      - "@FarazV2ray (61)"
+      - "@FarazV2ray (62)"
+      - "@FarazV2ray (63)"
+      - "@FarazV2ray (64)"
+      - "@FarazV2ray (65)"
+      - "@FarazV2ray (66)"
+      - "@FarazV2ray (67)"
+      - "@FarazV2ray (68)"
+      - "@filembad"
+      - "@FarazV2ray (69)"
+      - "@FarazV2ray (70)"
+      - "@FarazV2ray (71)"
+      - "@FarazV2ray (72)"
+      - "@FarazV2ray (73)"
+      - "@FarazV2ray (74)"
+      - "@FarazV2ray (75)"
+      - "@FarazV2ray (76)"
+      - "@FarazV2ray (77)"
+      - "@FarazV2ray (78)"
+      - "@FarazV2ray (79)"
+      - "@FarazV2ray (80)"
+      - "@FarazV2ray (81)"
+      - "@FarazV2ray (82)"
+      - "@FarazV2ray (83)"
+      - "@FarazV2ray (84)"
+      - "@FarazV2ray (85)"
+      - "@FarazV2ray (86)"
+      - "@FarazV2ray (87)"
+      - "@FarazV2ray (88)"
+      - "@FarazV2ray (89)"
+      - "@FarazV2ray (90)"
+      - "@FarazV2ray (91)"
+      - "@FarazV2ray (92)"
+      - "@FarazV2ray (93)"
+      - "@FarazV2ray (94)"
+      - "@FarazV2ray (95)"
+      - "@FarazV2ray (96)"
+      - "@FarazV2ray (97)"
+      - "@FarazV2ray (98)"
+      - "@FarazV2ray (99)"
+      - "@FarazV2ray (100)"
+      - "@FarazV2ray (101)"
+      - "@FarazV2ray (102)"
+      - "@FarazV2ray (103)"
+      - "@FarazV2ray (104)"
+      - "@FarazV2ray (105)"
+      - "@FarazV2ray (106)"
+      - "@FarazV2ray (107)"
+      - "@FarazV2ray (108)"
+      - "@FarazV2ray (109)"
+      - "@FarazV2ray (110)"
+      - "@FarazV2ray (111)"
+      - "@FarazV2ray (112)"
+      - "@FarazV2ray (113)"
+      - "@FarazV2ray (114)"
+      - "@FarazV2ray (115)"
+      - "@FarazV2ray (116)"
+      - "@FarazV2ray (117)"
+      - "@FarazV2ray (118)"
+      - "@FarazV2ray (119)"
+      - "@FarazV2ray (120)"
+      - "@FarazV2ray (121)"
+      - "@FarazV2ray (122)"
+      - "@FarazV2ray (123)"
+      - "@FarazV2ray (124)"
+      - "@FarazV2ray (125)"
+      - "@FarazV2ray (126)"
+      - "@FarazV2ray (127)"
+      - "@FarazV2ray (128)"
+      - "@FarazV2ray (129)"
+      - "@FarazV2ray (130)"
+      - "@FarazV2ray (131)"
+      - "@FarazV2ray (132)"
+      - "@FarazV2ray (133)"
+      - "@FarazV2ray (134)"
+      - "@FarazV2ray (135)"
+      - "@FarazV2ray (136)"
+      - "@FarazV2ray (137)"
+      - "@FarazV2ray (138)"
+      - "@FarazV2ray (139)"
+      - "@FarazV2ray (140)"
+      - "@FarazV2ray (141)"
+      - "@FarazV2ray (142)"
+      - "@FarazV2ray (143)"
+      - "@FarazV2ray (144)"
+      - "@FarazV2ray (145)"
+      - "@FarazV2ray (146)"
+      - "@FarazV2ray (147)"
+      - "@FarazV2ray (148)"
+      - "@FarazV2ray (149)"
+      - "@FarazV2ray (150)"
+      - "@FarazV2ray (151)"
+      - "@FarazV2ray (152)"
+      - "@FarazV2ray (153)"
+      - "@FarazV2ray (154)"
+  - name: "AUTO (Least Ping)"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "@FarazV2ray"
+      - "@FarazV2ray (2)"
+      - "@FarazV2ray (3)"
+      - "@FarazV2ray (4)"
+      - "@FarazV2ray (5)"
+      - "@FarazV2ray (6)"
+      - "@FarazV2ray (7)"
+      - "@FarazV2ray (8)"
+      - "@FarazV2ray (9)"
+      - "@FarazV2ray (10)"
+      - "@FarazV2ray (11)"
+      - "@FarazV2ray (12)"
+      - "@FarazV2ray (13)"
+      - "@FarazV2ray (14)"
+      - "@FarazV2ray (15)"
+      - "@FarazV2ray (16)"
+      - "@FarazV2ray (17)"
+      - "@FarazV2ray (18)"
+      - "@FarazV2ray (19)"
+      - "@FarazV2ray (20)"
+      - "@FarazV2ray (21)"
+      - "@FarazV2ray (22)"
+      - "@FarazV2ray (23)"
+      - "@FarazV2ray (24)"
+      - "@FarazV2ray (25)"
+      - "@FarazV2ray (26)"
+      - "@FarazV2ray (27)"
+      - "@FarazV2ray (28)"
+      - "@FarazV2ray (29)"
+      - "@FarazV2ray (30)"
+      - "@FarazV2ray (31)"
+      - "@FarazV2ray (32)"
+      - "@FarazV2ray (33)"
+      - "@FarazV2ray (34)"
+      - "@FarazV2ray (35)"
+      - "@FarazV2ray (36)"
+      - "@FarazV2ray (37)"
+      - "@FarazV2ray (38)"
+      - "@FarazV2ray (39)"
+      - "@FarazV2ray (40)"
+      - "@FarazV2ray (41)"
+      - "@FarazV2ray (42)"
+      - "@FarazV2ray (43)"
+      - "@FarazV2ray (44)"
+      - "@FarazV2ray (45)"
+      - "@FarazV2ray (46)"
+      - "@FarazV2ray (47)"
+      - "@FarazV2ray (48)"
+      - "@FarazV2ray (49)"
+      - "@FarazV2ray (50)"
+      - "@FarazV2ray (51)"
+      - "@FarazV2ray (52)"
+      - "@FarazV2ray (53)"
+      - "@FarazV2ray (54)"
+      - "@FarazV2ray (55)"
+      - "@FarazV2ray (56)"
+      - "@FarazV2ray (57)"
+      - "@FarazV2ray (58)"
+      - "@FarazV2ray (59)"
+      - "@FarazV2ray (60)"
+      - "@FarazV2ray (61)"
+      - "@FarazV2ray (62)"
+      - "@FarazV2ray (63)"
+      - "@FarazV2ray (64)"
+      - "@FarazV2ray (65)"
+      - "@FarazV2ray (66)"
+      - "@FarazV2ray (67)"
+      - "@FarazV2ray (68)"
+      - "@filembad"
+      - "@FarazV2ray (69)"
+      - "@FarazV2ray (70)"
+      - "@FarazV2ray (71)"
+      - "@FarazV2ray (72)"
+      - "@FarazV2ray (73)"
+      - "@FarazV2ray (74)"
+      - "@FarazV2ray (75)"
+      - "@FarazV2ray (76)"
+      - "@FarazV2ray (77)"
+      - "@FarazV2ray (78)"
+      - "@FarazV2ray (79)"
+      - "@FarazV2ray (80)"
+      - "@FarazV2ray (81)"
+      - "@FarazV2ray (82)"
+      - "@FarazV2ray (83)"
+      - "@FarazV2ray (84)"
+      - "@FarazV2ray (85)"
+      - "@FarazV2ray (86)"
+      - "@FarazV2ray (87)"
+      - "@FarazV2ray (88)"
+      - "@FarazV2ray (89)"
+      - "@FarazV2ray (90)"
+      - "@FarazV2ray (91)"
+      - "@FarazV2ray (92)"
+      - "@FarazV2ray (93)"
+      - "@FarazV2ray (94)"
+      - "@FarazV2ray (95)"
+      - "@FarazV2ray (96)"
+      - "@FarazV2ray (97)"
+      - "@FarazV2ray (98)"
+      - "@FarazV2ray (99)"
+      - "@FarazV2ray (100)"
+      - "@FarazV2ray (101)"
+      - "@FarazV2ray (102)"
+      - "@FarazV2ray (103)"
+      - "@FarazV2ray (104)"
+      - "@FarazV2ray (105)"
+      - "@FarazV2ray (106)"
+      - "@FarazV2ray (107)"
+      - "@FarazV2ray (108)"
+      - "@FarazV2ray (109)"
+      - "@FarazV2ray (110)"
+      - "@FarazV2ray (111)"
+      - "@FarazV2ray (112)"
+      - "@FarazV2ray (113)"
+      - "@FarazV2ray (114)"
+      - "@FarazV2ray (115)"
+      - "@FarazV2ray (116)"
+      - "@FarazV2ray (117)"
+      - "@FarazV2ray (118)"
+      - "@FarazV2ray (119)"
+      - "@FarazV2ray (120)"
+      - "@FarazV2ray (121)"
+      - "@FarazV2ray (122)"
+      - "@FarazV2ray (123)"
+      - "@FarazV2ray (124)"
+      - "@FarazV2ray (125)"
+      - "@FarazV2ray (126)"
+      - "@FarazV2ray (127)"
+      - "@FarazV2ray (128)"
+      - "@FarazV2ray (129)"
+      - "@FarazV2ray (130)"
+      - "@FarazV2ray (131)"
+      - "@FarazV2ray (132)"
+      - "@FarazV2ray (133)"
+      - "@FarazV2ray (134)"
+      - "@FarazV2ray (135)"
+      - "@FarazV2ray (136)"
+      - "@FarazV2ray (137)"
+      - "@FarazV2ray (138)"
+      - "@FarazV2ray (139)"
+      - "@FarazV2ray (140)"
+      - "@FarazV2ray (141)"
+      - "@FarazV2ray (142)"
+      - "@FarazV2ray (143)"
+      - "@FarazV2ray (144)"
+      - "@FarazV2ray (145)"
+      - "@FarazV2ray (146)"
+      - "@FarazV2ray (147)"
+      - "@FarazV2ray (148)"
+      - "@FarazV2ray (149)"
+      - "@FarazV2ray (150)"
+      - "@FarazV2ray (151)"
+      - "@FarazV2ray (152)"
+      - "@FarazV2ray (153)"
+      - "@FarazV2ray (154)"
+  - name: "ROUND ROBIN"
+    type: load-balance
+    strategy: round-robin
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "@FarazV2ray"
+      - "@FarazV2ray (2)"
+      - "@FarazV2ray (3)"
+      - "@FarazV2ray (4)"
+      - "@FarazV2ray (5)"
+      - "@FarazV2ray (6)"
+      - "@FarazV2ray (7)"
+      - "@FarazV2ray (8)"
+      - "@FarazV2ray (9)"
+      - "@FarazV2ray (10)"
+      - "@FarazV2ray (11)"
+      - "@FarazV2ray (12)"
+      - "@FarazV2ray (13)"
+      - "@FarazV2ray (14)"
+      - "@FarazV2ray (15)"
+      - "@FarazV2ray (16)"
+      - "@FarazV2ray (17)"
+      - "@FarazV2ray (18)"
+      - "@FarazV2ray (19)"
+      - "@FarazV2ray (20)"
+      - "@FarazV2ray (21)"
+      - "@FarazV2ray (22)"
+      - "@FarazV2ray (23)"
+      - "@FarazV2ray (24)"
+      - "@FarazV2ray (25)"
+      - "@FarazV2ray (26)"
+      - "@FarazV2ray (27)"
+      - "@FarazV2ray (28)"
+      - "@FarazV2ray (29)"
+      - "@FarazV2ray (30)"
+      - "@FarazV2ray (31)"
+      - "@FarazV2ray (32)"
+      - "@FarazV2ray (33)"
+      - "@FarazV2ray (34)"
+      - "@FarazV2ray (35)"
+      - "@FarazV2ray (36)"
+      - "@FarazV2ray (37)"
+      - "@FarazV2ray (38)"
+      - "@FarazV2ray (39)"
+      - "@FarazV2ray (40)"
+      - "@FarazV2ray (41)"
+      - "@FarazV2ray (42)"
+      - "@FarazV2ray (43)"
+      - "@FarazV2ray (44)"
+      - "@FarazV2ray (45)"
+      - "@FarazV2ray (46)"
+      - "@FarazV2ray (47)"
+      - "@FarazV2ray (48)"
+      - "@FarazV2ray (49)"
+      - "@FarazV2ray (50)"
+      - "@FarazV2ray (51)"
+      - "@FarazV2ray (52)"
+      - "@FarazV2ray (53)"
+      - "@FarazV2ray (54)"
+      - "@FarazV2ray (55)"
+      - "@FarazV2ray (56)"
+      - "@FarazV2ray (57)"
+      - "@FarazV2ray (58)"
+      - "@FarazV2ray (59)"
+      - "@FarazV2ray (60)"
+      - "@FarazV2ray (61)"
+      - "@FarazV2ray (62)"
+      - "@FarazV2ray (63)"
+      - "@FarazV2ray (64)"
+      - "@FarazV2ray (65)"
+      - "@FarazV2ray (66)"
+      - "@FarazV2ray (67)"
+      - "@FarazV2ray (68)"
+      - "@filembad"
+      - "@FarazV2ray (69)"
+      - "@FarazV2ray (70)"
+      - "@FarazV2ray (71)"
+      - "@FarazV2ray (72)"
+      - "@FarazV2ray (73)"
+      - "@FarazV2ray (74)"
+      - "@FarazV2ray (75)"
+      - "@FarazV2ray (76)"
+      - "@FarazV2ray (77)"
+      - "@FarazV2ray (78)"
+      - "@FarazV2ray (79)"
+      - "@FarazV2ray (80)"
+      - "@FarazV2ray (81)"
+      - "@FarazV2ray (82)"
+      - "@FarazV2ray (83)"
+      - "@FarazV2ray (84)"
+      - "@FarazV2ray (85)"
+      - "@FarazV2ray (86)"
+      - "@FarazV2ray (87)"
+      - "@FarazV2ray (88)"
+      - "@FarazV2ray (89)"
+      - "@FarazV2ray (90)"
+      - "@FarazV2ray (91)"
+      - "@FarazV2ray (92)"
+      - "@FarazV2ray (93)"
+      - "@FarazV2ray (94)"
+      - "@FarazV2ray (95)"
+      - "@FarazV2ray (96)"
+      - "@FarazV2ray (97)"
+      - "@FarazV2ray (98)"
+      - "@FarazV2ray (99)"
+      - "@FarazV2ray (100)"
+      - "@FarazV2ray (101)"
+      - "@FarazV2ray (102)"
+      - "@FarazV2ray (103)"
+      - "@FarazV2ray (104)"
+      - "@FarazV2ray (105)"
+      - "@FarazV2ray (106)"
+      - "@FarazV2ray (107)"
+      - "@FarazV2ray (108)"
+      - "@FarazV2ray (109)"
+      - "@FarazV2ray (110)"
+      - "@FarazV2ray (111)"
+      - "@FarazV2ray (112)"
+      - "@FarazV2ray (113)"
+      - "@FarazV2ray (114)"
+      - "@FarazV2ray (115)"
+      - "@FarazV2ray (116)"
+      - "@FarazV2ray (117)"
+      - "@FarazV2ray (118)"
+      - "@FarazV2ray (119)"
+      - "@FarazV2ray (120)"
+      - "@FarazV2ray (121)"
+      - "@FarazV2ray (122)"
+      - "@FarazV2ray (123)"
+      - "@FarazV2ray (124)"
+      - "@FarazV2ray (125)"
+      - "@FarazV2ray (126)"
+      - "@FarazV2ray (127)"
+      - "@FarazV2ray (128)"
+      - "@FarazV2ray (129)"
+      - "@FarazV2ray (130)"
+      - "@FarazV2ray (131)"
+      - "@FarazV2ray (132)"
+      - "@FarazV2ray (133)"
+      - "@FarazV2ray (134)"
+      - "@FarazV2ray (135)"
+      - "@FarazV2ray (136)"
+      - "@FarazV2ray (137)"
+      - "@FarazV2ray (138)"
+      - "@FarazV2ray (139)"
+      - "@FarazV2ray (140)"
+      - "@FarazV2ray (141)"
+      - "@FarazV2ray (142)"
+      - "@FarazV2ray (143)"
+      - "@FarazV2ray (144)"
+      - "@FarazV2ray (145)"
+      - "@FarazV2ray (146)"
+      - "@FarazV2ray (147)"
+      - "@FarazV2ray (148)"
+      - "@FarazV2ray (149)"
+      - "@FarazV2ray (150)"
+      - "@FarazV2ray (151)"
+      - "@FarazV2ray (152)"
+      - "@FarazV2ray (153)"
+      - "@FarazV2ray (154)"
+  - name: "FALLBACK"
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "@FarazV2ray"
+      - "@FarazV2ray (2)"
+      - "@FarazV2ray (3)"
+      - "@FarazV2ray (4)"
+      - "@FarazV2ray (5)"
+      - "@FarazV2ray (6)"
+      - "@FarazV2ray (7)"
+      - "@FarazV2ray (8)"
+      - "@FarazV2ray (9)"
+      - "@FarazV2ray (10)"
+      - "@FarazV2ray (11)"
+      - "@FarazV2ray (12)"
+      - "@FarazV2ray (13)"
+      - "@FarazV2ray (14)"
+      - "@FarazV2ray (15)"
+      - "@FarazV2ray (16)"
+      - "@FarazV2ray (17)"
+      - "@FarazV2ray (18)"
+      - "@FarazV2ray (19)"
+      - "@FarazV2ray (20)"
+      - "@FarazV2ray (21)"
+      - "@FarazV2ray (22)"
+      - "@FarazV2ray (23)"
+      - "@FarazV2ray (24)"
+      - "@FarazV2ray (25)"
+      - "@FarazV2ray (26)"
+      - "@FarazV2ray (27)"
+      - "@FarazV2ray (28)"
+      - "@FarazV2ray (29)"
+      - "@FarazV2ray (30)"
+      - "@FarazV2ray (31)"
+      - "@FarazV2ray (32)"
+      - "@FarazV2ray (33)"
+      - "@FarazV2ray (34)"
+      - "@FarazV2ray (35)"
+      - "@FarazV2ray (36)"
+      - "@FarazV2ray (37)"
+      - "@FarazV2ray (38)"
+      - "@FarazV2ray (39)"
+      - "@FarazV2ray (40)"
+      - "@FarazV2ray (41)"
+      - "@FarazV2ray (42)"
+      - "@FarazV2ray (43)"
+      - "@FarazV2ray (44)"
+      - "@FarazV2ray (45)"
+      - "@FarazV2ray (46)"
+      - "@FarazV2ray (47)"
+      - "@FarazV2ray (48)"
+      - "@FarazV2ray (49)"
+      - "@FarazV2ray (50)"
+      - "@FarazV2ray (51)"
+      - "@FarazV2ray (52)"
+      - "@FarazV2ray (53)"
+      - "@FarazV2ray (54)"
+      - "@FarazV2ray (55)"
+      - "@FarazV2ray (56)"
+      - "@FarazV2ray (57)"
+      - "@FarazV2ray (58)"
+      - "@FarazV2ray (59)"
+      - "@FarazV2ray (60)"
+      - "@FarazV2ray (61)"
+      - "@FarazV2ray (62)"
+      - "@FarazV2ray (63)"
+      - "@FarazV2ray (64)"
+      - "@FarazV2ray (65)"
+      - "@FarazV2ray (66)"
+      - "@FarazV2ray (67)"
+      - "@FarazV2ray (68)"
+      - "@filembad"
+      - "@FarazV2ray (69)"
+      - "@FarazV2ray (70)"
+      - "@FarazV2ray (71)"
+      - "@FarazV2ray (72)"
+      - "@FarazV2ray (73)"
+      - "@FarazV2ray (74)"
+      - "@FarazV2ray (75)"
+      - "@FarazV2ray (76)"
+      - "@FarazV2ray (77)"
+      - "@FarazV2ray (78)"
+      - "@FarazV2ray (79)"
+      - "@FarazV2ray (80)"
+      - "@FarazV2ray (81)"
+      - "@FarazV2ray (82)"
+      - "@FarazV2ray (83)"
+      - "@FarazV2ray (84)"
+      - "@FarazV2ray (85)"
+      - "@FarazV2ray (86)"
+      - "@FarazV2ray (87)"
+      - "@FarazV2ray (88)"
+      - "@FarazV2ray (89)"
+      - "@FarazV2ray (90)"
+      - "@FarazV2ray (91)"
+      - "@FarazV2ray (92)"
+      - "@FarazV2ray (93)"
+      - "@FarazV2ray (94)"
+      - "@FarazV2ray (95)"
+      - "@FarazV2ray (96)"
+      - "@FarazV2ray (97)"
+      - "@FarazV2ray (98)"
+      - "@FarazV2ray (99)"
+      - "@FarazV2ray (100)"
+      - "@FarazV2ray (101)"
+      - "@FarazV2ray (102)"
+      - "@FarazV2ray (103)"
+      - "@FarazV2ray (104)"
+      - "@FarazV2ray (105)"
+      - "@FarazV2ray (106)"
+      - "@FarazV2ray (107)"
+      - "@FarazV2ray (108)"
+      - "@FarazV2ray (109)"
+      - "@FarazV2ray (110)"
+      - "@FarazV2ray (111)"
+      - "@FarazV2ray (112)"
+      - "@FarazV2ray (113)"
+      - "@FarazV2ray (114)"
+      - "@FarazV2ray (115)"
+      - "@FarazV2ray (116)"
+      - "@FarazV2ray (117)"
+      - "@FarazV2ray (118)"
+      - "@FarazV2ray (119)"
+      - "@FarazV2ray (120)"
+      - "@FarazV2ray (121)"
+      - "@FarazV2ray (122)"
+      - "@FarazV2ray (123)"
+      - "@FarazV2ray (124)"
+      - "@FarazV2ray (125)"
+      - "@FarazV2ray (126)"
+      - "@FarazV2ray (127)"
+      - "@FarazV2ray (128)"
+      - "@FarazV2ray (129)"
+      - "@FarazV2ray (130)"
+      - "@FarazV2ray (131)"
+      - "@FarazV2ray (132)"
+      - "@FarazV2ray (133)"
+      - "@FarazV2ray (134)"
+      - "@FarazV2ray (135)"
+      - "@FarazV2ray (136)"
+      - "@FarazV2ray (137)"
+      - "@FarazV2ray (138)"
+      - "@FarazV2ray (139)"
+      - "@FarazV2ray (140)"
+      - "@FarazV2ray (141)"
+      - "@FarazV2ray (142)"
+      - "@FarazV2ray (143)"
+      - "@FarazV2ray (144)"
+      - "@FarazV2ray (145)"
+      - "@FarazV2ray (146)"
+      - "@FarazV2ray (147)"
+      - "@FarazV2ray (148)"
+      - "@FarazV2ray (149)"
+      - "@FarazV2ray (150)"
+      - "@FarazV2ray (151)"
+      - "@FarazV2ray (152)"
+      - "@FarazV2ray (153)"
+      - "@FarazV2ray (154)"
+rules:
+  - MATCH,PROXY
