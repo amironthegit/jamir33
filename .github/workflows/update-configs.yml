@@ -12,7 +12,6 @@ permissions:
 jobs:
   scrape-and-update:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,9 +28,6 @@ jobs:
           mkdir -p source/output
           if [ -f gh-pages/meta.json ]; then
             cp gh-pages/meta.json source/output/meta.json
-            echo "Restored meta"
-          else
-            echo "First run"
           fi
 
       - uses: actions/setup-python@v5
@@ -42,4 +38,22 @@ jobs:
         working-directory: source
         run: python src/scraper.py
 
-     
+      - name: Deploy to gh-pages
+        working-directory: source
+        run: |
+          test -f output/sub.txt || exit 0
+          cd ../gh-pages || mkdir -p ../gh-pages && cd ../gh-pages
+          if [ ! -d .git ]; then
+            git init
+            git checkout --orphan gh-pages
+          else
+            git checkout gh-pages || git checkout --orphan gh-pages
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          cp ../source/output/sub.txt .
+          cp ../source/output/meta.json .
+          cp ../source/output/index.html .
+          git add sub.txt meta.json index.html
+          git diff --cached --quiet || git commit -m "Update configs"
+          git push origin gh-pages --force
