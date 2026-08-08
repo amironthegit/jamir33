@@ -2,13 +2,13 @@ import re, os, json, base64, sys
 import html as html_lib
 import urllib.request, urllib.error
 from datetime import datetime, timezone
+from clash_converter import build_clash_yaml
 
 CHANNEL = "v2ray1_ng"
 TELEGRAM_WEB_URL = f"https://t.me/s/{CHANNEL}"
 META_PATH = "output/meta.json"
 OUTPUT_DIR = "output"
 
-# ✅ Regex اصلاح‌شده: کل لینک تا رسیدن به فاصله یا تگ HTML
 CONFIG_REGEX = re.compile(
     r'(?:vmess|vless|trojan|ss|ssr|hysteria2?|tuic)://[^\s<>"\']+',
     re.IGNORECASE
@@ -46,7 +46,6 @@ def load_last_processed_post():
         return None
 
 def split_posts(html):
-    # ✅ روش جدید و مطمئن: تقسیم صفحه بر اساس data-post
     parts = re.split(r'data-post="([^"]+)"', html)
     posts = []
     i = 1
@@ -98,13 +97,22 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     with open(os.path.join(OUTPUT_DIR, 'sub.txt'), 'w') as f:
         f.write(encode_subscription(configs))
+    clash = build_clash_yaml(configs)
+    if clash:
+        with open(os.path.join(OUTPUT_DIR, 'clash.yaml'), 'w') as f:
+            f.write(clash)
+        print("Clash YAML generated")
     with open(os.path.join(OUTPUT_DIR, 'meta.json'), 'w') as f:
         json.dump({"count": len(configs), "updated_at": now,
                    "source": CHANNEL, "last_post_id": newest}, f, indent=2)
     with open(os.path.join(OUTPUT_DIR, 'index.html'), 'w') as f:
-        f.write(f'<h1>Active</h1><p>Configs: {len(configs)}</p><p>Updated: {now}</p>')
+        f.write(
+            '<h1>Active</h1>'
+            f'<p>Configs: {len(configs)}</p>'
+            f'<p>Updated: {now}</p>'
+            '<p><a href="sub.txt">V2Ray Sub</a> | <a href="clash.yaml">Clash YAML</a></p>'
+        )
     print(f"Success! {len(configs)} configs saved. Newest post: {newest}")
-    print(f"Sample: {configs[0][:80]}...")
 
 if __name__ == "__main__":
     main()
