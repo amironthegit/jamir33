@@ -5,6 +5,11 @@ on:
     - cron: '0 8 * * *'
     - cron: '0 20 * * *'
   workflow_dispatch:
+    inputs:
+      full_rebuild:
+        description: 'Reset memory and rebuild from scratch'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -24,6 +29,10 @@ jobs:
           mkdir -p output
           BASE="https://raw.githubusercontent.com/${{ github.repository }}/gh-pages"
           curl -sf -o output/meta.json "$BASE/meta.json" || echo "{}" > output/meta.json
+          if [ "${{ github.event.inputs.full_rebuild }}" = "true" ]; then
+            echo "Forced full rebuild - resetting memory"
+            rm -f output/meta.json
+          fi
           if ! curl -sf -o /dev/null "$BASE/sub.txt"; then
             echo "sub.txt missing on Pages - resetting state for full rebuild"
             rm -f output/meta.json
