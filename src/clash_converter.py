@@ -264,15 +264,20 @@ def build_clash_yaml(configs):
         lines.extend(_proxy_lines(p))
 
     names = [_q(p['name']) for p in proxies]
+
     lines.append('proxy-groups:')
+
+    # گروه اصلی: انتخاب دستی بین همه حالت‌ها
     lines.append('  - name: "PROXY"')
     lines.append('    type: select')
     lines.append('    proxies:')
-    lines.append('      - "AUTO"')
-    lines.append('      - "DIRECT"')
+    for g in ('AUTO (Least Ping)', 'ROUND ROBIN', 'FALLBACK', 'DIRECT'):
+        lines.append(f'      - {_q(g)}')
     for n in names:
         lines.append(f'      - {n}')
-    lines.append('  - name: "AUTO"')
+
+    # سریع‌ترین پینگ
+    lines.append('  - name: "AUTO (Least Ping)"')
     lines.append('    type: url-test')
     lines.append('    url: http://www.gstatic.com/generate_204')
     lines.append('    interval: 300')
@@ -280,6 +285,26 @@ def build_clash_yaml(configs):
     lines.append('    proxies:')
     for n in names:
         lines.append(f'      - {n}')
+
+    # پخش چرخشی اتصال‌ها
+    lines.append('  - name: "ROUND ROBIN"')
+    lines.append('    type: load-balance')
+    lines.append('    strategy: round-robin')
+    lines.append('    url: http://www.gstatic.com/generate_204')
+    lines.append('    interval: 300')
+    lines.append('    proxies:')
+    for n in names:
+        lines.append(f'      - {n}')
+
+    # جایگزین خودکار هنگام قطعی
+    lines.append('  - name: "FALLBACK"')
+    lines.append('    type: fallback')
+    lines.append('    url: http://www.gstatic.com/generate_204')
+    lines.append('    interval: 300')
+    lines.append('    proxies:')
+    for n in names:
+        lines.append(f'      - {n}')
+
     lines.append('rules:')
     lines.append('  - MATCH,PROXY')
     return '\n'.join(lines) + '\n'
