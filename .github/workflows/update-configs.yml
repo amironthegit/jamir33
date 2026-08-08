@@ -17,43 +17,39 @@ jobs:
         with:
           path: source
 
-      - uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
-        continue-on-error: true
-
-      - name: Restore state
-        run: |
-          mkdir -p source/output
-          if [ -f gh-pages/meta.json ]; then
-            cp gh-pages/meta.json source/output/meta.json
-          fi
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Restore previous state
+        run: |
+          mkdir -p source/output
+          git fetch origin gh-pages 2>/dev/null || true
+          git show origin/gh-pages:meta.json > source/output/meta.json 2>/dev/null || echo "First run - no previous state"
 
       - name: Run scraper
         working-directory: source
         run: python src/scraper.py
 
       - name: Deploy to gh-pages
-        working-directory: source
         run: |
-          test -f output/sub.txt || exit 0
-          cd ../gh-pages || mkdir -p ../gh-pages && cd ../gh-pages
-          if [ ! -d .git ]; then
-            git init
-            git checkout --orphan gh-pages
-          else
-            git checkout gh-pages || git checkout --orphan gh-pages
+          if [ ! -f source/output/sub.txt ]; then
+            echo "No update needed"
+            exit 0
           fi
+
+          # ساخت پوشه deploy مجزا
+          mkdir -p deploy
+          cp source/output/sub.txt deploy/
+          cp source/output/meta.json deploy/
+          cp source/output/index.html deploy/
+
+          cd deploy
+          git init
+          git checkout --orphan gh-pages
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          cp ../source/output/sub.txt .
-          cp ../source/output/meta.json .
-          cp ../source/output/index.html .
-          git add sub.txt meta.json index.html
-          git diff --cached --quiet || git commit -m "Update configs"
+          git add .
+          git commit -m "Update configs"
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git push origin gh-pages --force
