@@ -10,30 +10,31 @@ permissions:
   contents: write
 
 jobs:
-  scrape-and-update:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+      
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Restore previous state
+      # دانلود امن فایل قبلی بدون درگیری با git
+      - name: Download previous state
         run: |
           mkdir -p output
-          git fetch origin gh-pages 2>/dev/null || true
-          git show origin/gh-pages:meta.json > output/meta.json 2>/dev/null || echo "First run"
+          curl -s -o output/meta.json https://raw.githubusercontent.com/${{ github.repository }}/gh-pages/meta.json || echo "{}" > output/meta.json
+          echo "Current meta.json:"
+          cat output/meta.json
 
-      - name: Run scraper
+      - name: Run stealth scraper
         run: python src/scraper.py
 
+      # دیپلوی بی‌دردسر با اکشن رسمی
       - name: Deploy to GitHub Pages
-        if: hashFiles('output/sub.txt') != ''
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           publish_branch: gh-pages
           force_orphan: true
-          commit_message: "Update configs"
