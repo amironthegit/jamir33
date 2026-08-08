@@ -1,0 +1,45 @@
+name: Update V2Ray Configs
+on:
+  schedule:
+    - cron: '0 8 * * *'
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { path: source }
+      - uses: actions/checkout@v4
+        with: { ref: gh-pages, path: gh-pages }
+        continue-on-error: true
+      - name: Restore state
+        run: |
+          mkdir -p source/output
+          [ -f gh-pages/meta.json ] && cp gh-pages/meta.json source/output/meta.json && echo "📂 Restored meta" || echo "📂 First run"
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Run scraper
+        working-directory: source
+        run: python src/scraper.py
+      - name: Deploy to gh-pages
+        working-directory: source
+        run: |
+          [ ! -f output/sub.txt ] && echo "⏭️ Skip" && exit 0
+          cd ../gh-pages 2>/dev/null || cd ..
+          if [ ! -d .git ] || ! git rev-parse --verify gh-pages >/dev/null 2>&1; then
+            git init && git checkout --orphan gh-pages
+          else git checkout gh-pages; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          cp ../source/output/sub.txt . && cp ../source/output/meta.json .
+          cat > index.html << 'EOF'
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>V2Ray Sub</title></head>
+<body><h2>✅ Active</h2><pre id="m"></pre>
+<script>fetch('meta.json').then(r=>r.json()).then(d=>document.getElementById('m').textContent=JSON.stringify(d,null,2))</script></body></html>
+EOF
+          git add sub.txt meta.json index.html
+          git diff --cached --quiet || git commit -m "🔄 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push origin gh-pages --force
