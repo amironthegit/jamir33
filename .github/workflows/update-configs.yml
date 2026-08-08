@@ -14,24 +14,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # دانلود امن فایل قبلی بدون درگیری با git
       - name: Download previous state
         run: |
           mkdir -p output
-          curl -s -o output/meta.json https://raw.githubusercontent.com/${{ github.repository }}/gh-pages/meta.json || echo "{}" > output/meta.json
+          BASE="https://raw.githubusercontent.com/${{ github.repository }}/gh-pages"
+          curl -sf -o output/meta.json "$BASE/meta.json" || echo "{}" > output/meta.json
+          if ! curl -sf -o /dev/null "$BASE/sub.txt"; then
+            echo "sub.txt missing on Pages - resetting state for full rebuild"
+            rm -f output/meta.json
+          fi
           echo "Current meta.json:"
-          cat output/meta.json
+          cat output/meta.json 2>/dev/null || echo "(none)"
 
       - name: Run stealth scraper
         run: python src/scraper.py
 
-      # دیپلوی بی‌دردسر با اکشن رسمی
       - name: Deploy to GitHub Pages
+        if: hashFiles('output/sub.txt') != ''
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
