@@ -3,6 +3,7 @@ import html as html_lib
 import urllib.request, urllib.error
 from datetime import datetime, timezone
 from clash_converter import build_clash_yaml
+from aistudio_tester import filter_working_configs
 
 CHANNEL = "v2ray1_ng"
 TELEGRAM_WEB_URL = f"https://t.me/s/{CHANNEL}"
@@ -90,29 +91,42 @@ def main():
     last = load_last_processed_post()
     print(f"Last processed: {last or '(first run)'}")
     configs, newest = extract_new_configs(html, last)
+    
     if not configs:
         print("No new configs found.")
         sys.exit(0)
+        
+    # 🧪 فیلتر کردن کانفیگ‌ها: فقط آنهایی که به AI Studio وصل می‌شوند
+    configs = filter_working_configs(configs)
+    
+    if not configs:
+        print("⚠️ None of the new configs can access AI Studio. Keeping old files.")
+        sys.exit(0)
+
     now = datetime.now(timezone.utc).isoformat()
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
     with open(os.path.join(OUTPUT_DIR, 'sub.txt'), 'w') as f:
         f.write(encode_subscription(configs))
+        
     clash = build_clash_yaml(configs)
     if clash:
         with open(os.path.join(OUTPUT_DIR, 'clash.yaml'), 'w') as f:
             f.write(clash)
         print("Clash YAML generated")
+        
     with open(os.path.join(OUTPUT_DIR, 'meta.json'), 'w') as f:
         json.dump({"count": len(configs), "updated_at": now,
-                   "source": CHANNEL, "last_post_id": newest}, f, indent=2)
+                   "source": CHANNEL, "last_post_id": newest, "filtered_for": "AI Studio"}, f, indent=2)
+                   
     with open(os.path.join(OUTPUT_DIR, 'index.html'), 'w') as f:
         f.write(
-            '<h1>Active</h1>'
-            f'<p>Configs: {len(configs)}</p>'
+            '<h1>Active (AI Studio Filtered)</h1>'
+            f'<p>Working Configs: {len(configs)}</p>'
             f'<p>Updated: {now}</p>'
             '<p><a href="sub.txt">V2Ray Sub</a> | <a href="clash.yaml">Clash YAML</a></p>'
         )
-    print(f"Success! {len(configs)} configs saved. Newest post: {newest}")
+    print(f"Success! {len(configs)} working configs saved.")
 
 if __name__ == "__main__":
     main()
